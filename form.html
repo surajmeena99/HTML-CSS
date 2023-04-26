@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>this is my form</legend>
+        <form action=" php.backend" method="post">
+            <table>
+                <tr>
+                    <td><label for="Username">Username</label></td>
+                    <td><input type="text" id="Username" required placeholder="enter your name"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">password</label></td>
+                    <td><input type="password" id="password" placeholder="enter your password" ></td>
+                </tr>
+                <tr>
+                    <td><label for="Phone-no">Phone-no</label></td>
+                    <td><input type="tel" id="Phone-no"></td>
+                </tr>
+                <tr>
+                    <td><label for="Email">Email</label></td>
+                    <td><input type="email" id="Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="DOB">DOB</label></td>
+                    <td><input type="date" id="DOB"></td>
+                </tr>
+                <tr>
+                    <td><label for="date-time">date-time</label></td>
+                    <td><input type="datetime-local" id="date-time"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">gender</label></td>
+                    <td>
+                        male <input type="radio" name="gender" id="">
+                        Female <input type="radio" name="gender" id="">
+                        Other <input type="radio" name="gender" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Hobbies"> Hobbies</label></td>
+                    <td>
+                        cricket <input type="checkbox" checked disabled name="" id="">
+                        Kabbadi <input type="checkbox" name="" id="">
+                        Movies <input type="checkbox" name="" id="">
+                        Traveling <input type="checkbox" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Hobbies"> Enter Your Hobbies </label></td>
+                    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City</label></td>
+                    <td>
+                        <select>
+                            <option value="">Ahmedabad</option>
+                            <option value="">Surat</option>
+                            <option value="">Jaipur</option>
+                            <option value="">Mumbai</option>
+
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Education">Education</label></td>
+                    <td>
+                        <select name="" id="" multiple>
+                            <option value="">10th</option>
+                            <option value="">12th</option>
+                            <option value="">Btech</option>
+                            <option value="">Bsc</option>
+                            <option value="">Bcom</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="color">color</label></td>
+                    <td><input type="color"></td>
+                </tr>
+                <tr>
+                     <td><label for="range">range</label></td>
+                     <td>0<input type="range" name="" value="10" id="">100</td>
+                    </tr>
+                    <tr>
+                        <td><label for="number">number</label></td>
+                        <td><input type="number"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="reset" value="reset"</td>
+                            <td><input type="button" value="Readmore"></td>
+                            <td><input type="submit" value="savedata"></td>
+                            <td><button>Readmore</button></td>
+                    </tr>
+
+            </table>
+        </form>
+    </fieldset>
+    
+</body>
+</html>
