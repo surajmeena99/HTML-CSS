@@ -1,0 +1,40 @@
+#heading{
+    border: 1px solid aqua;
+    text-align: center;
+    color: red;
+    background-color: rgb(30, 161, 248);
+}
+.reg-form{
+    background-color: aqua;
+}
+h3{
+    color: red;
+}
+
+.form-label1{
+    display: block;
+    text-align: right;
+    margin-right: 550px;
+}
+.personal_1{
+    /* border: 1px solid red; */
+    display: inline-block;
+    text-align: left;
+    margin: 0 100px 0 100px;
+    
+}
+.label2{
+    text-align: right;
+    
+}
+.account_1{
+    /* border: 1px solid black; */
+    display: inline-block;
+    text-align: left;
+    margin: 0 100px 0 100px;
+}
+.button{
+    text-align: center;
+    background-color: rgb(6, 108, 167);
+    color: white;
+}

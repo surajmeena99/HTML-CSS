@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./Reg-form_stylesheet.css"> -->
+    <style>
+        #heading{
+            border: 1px solid aqua;
+            text-align: center;
+            color: red;
+            background-color: rgb(30, 161, 248);
+        }
+        .reg-form{
+            background-color: aqua;
+        }
+        h3{
+            color: red;
+        }
+        
+        .form-label1{
+            display: block;
+            text-align: right;
+            margin-right: 550px;
+        }
+        .personal_1{
+            /* border: 1px solid red; */
+            display: inline-block;
+            text-align: left;
+            margin: 0 100px 0 100px;
+            
+        }
+        .label2{
+            text-align: right;
+            
+        }
+        .account_1{
+            /* border: 1px solid black; */
+            display: inline-block;
+            text-align: left;
+            margin: 0 100px 0 100px;
+        }
+        .button{
+            text-align: center;
+            background-color: rgb(6, 108, 167);
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h1>Individual Registration</h1>
+    </div>
+    <section class="reg-form">
+    <form action=" " method="post">
+        <section class="section1">
+            <h3>User Particulars</h3>
+            <div class="user">
+                <p class="form-label1"><label for="login id">Login ID</label>
+                <input type="text" id="login id" required placeholder="enter your login id" ></p>
+                <p class="form-label1"><label for="password">Password</label>
+                <input type="password" id="password"></p>
+                <p class="form-label1"><label for="confirm password">Confirm Password</label>
+                <input type="password" id="confirm password" required></p>
+                </div>
+        </section>
+
+        <section class="section2">
+            <h3>Personal Particulars</h3>
+            <div class="personal_1">
+               <p class="label2" style="margin-right: 120px;"><label for="salutation">Salutation</label>
+                <select name="" id="">
+                    <option value="">Select</option>
+                    <option value="">Mr.</option>
+                    <option value="">Mrs.</option>
+                    <option value="">Ms.</option>
+                </select></p>
+                <p class="label2" ><label for="middle name">Middle Name</label>
+                <input type="text" id="middle name"></p>
+                <p class="label2" style="margin-right: 80px;"><label for="resident status">Resident Status</label>
+                 <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="">Resident</option>
+                        <option value="">Non-Risident</option>
+                 </select></p>
+                <p class="label2"><label for="email id">Email-Id</label>
+                <input type="email" id="email id" ></p>
+            </div>
+            <div class="personal_1">
+                <p class="label2"><label for="first name">First Name</label>
+                <input type="text" id="first name"></p>
+                <p class="label2"><label for="last name">Last Name</label>
+                    <input type="text" id="last name"></p>
+                    <p class="label2" style="margin-right: 110px;"><label for="country">Country</label>
+                        <select name="" id="">
+                            <option value="">Select</option>
+                            <option value="">India</option>
+                            <option value="">America</option>
+                            <option value="">England</option>
+                        </select></p>  
+                <p class="label2"><label for="mobile number">Mobile Number</label>
+                <input type="tel" id="mobile number"></p>         
+            </div>
+        </section>
+        <section class="section3">
+            <h3>Account Particulars</h3>
+            <div class="account_1">
+                <p><label for="account no">15 Digit Account No</label>
+                <input type="number" id="account no"></p>
+                <p style="margin-left: 40px;"><label for="fund transfer">Fund Transfer</label>
+                    <select name="" id="">
+                        <option value="">Select</option>
+                        <option value="">UPI</option>
+                        <option value="">Net-Banking</option>
+                        <option value="">Wallet</option>
+                    </select></p>  
+            </div>
+            
+            <div class="account_1">
+                <p><label for="nick name">Nick Name</label>
+                <input type="text" id="nick name"></p>
+            </div>
+        </section>
+        <section>
+            <h3>DECLARATION</h3>
+            <p>I have read, understood and hereby agree to the Terms and Conditions in respect of all products and channels.</p>
+            <p>I understand that any changes in the terms and conditions applicabale to this relationship would be made available to me on request at any IOB branches. I confirm that all accounts under this login name are operated singly and in case of joint account operated by either or survivor/ anyone or survivor(s) under his/her joint name respectively. I do hereby declare that information furnished in this form is true to the best of my knowledge and belief.</p>
+
+        </section>
+        <div style="text-align: center;" >
+            <input type="submit" value="Submit" class="button">
+            <input type="reset" value="Reset" class="button">
+        </div>
+    </form>
+    </section>
+</body>
+</html>
