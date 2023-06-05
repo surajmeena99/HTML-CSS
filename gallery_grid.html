@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            background-color: gainsboro;
+            height: 1300px;
+            display: grid;
+            /* row-gap: 5px; */
+            /* column-gap: 5px; */
+            grid-template-rows: 1fr 1fr 200px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .box{
+            background-color: aqua;
+            margin: 5px;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+        }
+        #first{
+            font-size: 50px;
+            color: white;
+            text-align: center;
+        }
+        /* #first img{
+            width: 100%;
+            height: 100%;
+        } */
+        #second{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            font-size: 50px;
+            color: white;
+            text-align: center;
+        }
+        #fourth{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            font-size: 50px;
+            color: white;
+            text-align: center; 
+        }
+        #sixth{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            font-size: 50px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box" id="first">
+            <img src="../Image/images.jpg" alt="">
+        </div>
+        <div class="box" id="second">
+            <img src="../Image/sunflower-g6039da823_1920.png" alt="">
+        </div>
+        <div class="box">
+            <img src="../Image/helmet.jpg" alt="">
+        </div>
+        <div class="box" id="fourth">
+            <img src="../Image/PC_QC_Teddy_186x116._SY116_CB620365328_.jpg" alt="">
+        </div>
+        <div class="box">
+            <img src="../Image/watch.jpg" alt="">
+        </div>
+        <div class="box" id="sixth">
+            <img src="../Image/Screenshot (41).png" alt="">
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+</body>
+</html>
