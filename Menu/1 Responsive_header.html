@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav .logo a{
+            padding: 10px;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 600;
+            color: red;
+        }
+        nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: black;
+            align-items: center;
+            width: 100%;
+            height: 80px;
+            padding: 0 50px 0 50px;
+            line-height: 80px;
+        }
+        nav ul{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        nav ul li{
+            margin: 0 5px;
+            line-height: 80px;
+        }
+        nav ul li a{
+            font-size: 15px;
+            color: blue;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        nav ul li a.active, a:hover{
+            color: white;
+            background-color: blue;
+        }
+        label #btn, label #cancel{
+            font-size: 25px;
+            color: white;
+            line-height: 80px;
+            float: right;
+            cursor: pointer;
+            margin-right: 40px;
+            display: none;
+        }
+        #check{ 
+            display: none;
+        }
+
+        @media (max-width: 858px) {
+            label #btn{
+                display: block;
+            }
+            nav ul{
+                flex-direction: column;
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #2c3e50;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul li{
+                display: block;
+                margin: 30px 0;
+                line-height: 30px;
+            }
+            nav ul li a{
+                font-size: 20px;
+            }
+            a:hover{
+            color: white;
+            background-color: blue;
+            } 
+            #check:checked ~ ul{
+                left: 0;
+            } 
+            #check:checked ~ label #btn{
+                display: none;
+            } 
+            #check:checked ~ label #cancel{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+        <header>
+                
+            <nav>
+                <div class="logo">
+                    <a href="#">Suraj Meena</a>
+                    <!-- <img src="../Image/Screenshot (40).png" alt=""> -->
+                </div>
+                <input type="checkbox" id="check">
+                <label for="check" class="menu_btn">
+                    <i class="fa-solid fa-bars" id="btn"></i>
+                    <i class="fa-solid fa-times" id="cancel"></i>
+                </label>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                
+            </nav>
+            
+                
+
+        </header>
+</body>
+</html>
